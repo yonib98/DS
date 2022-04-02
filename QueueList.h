@@ -13,6 +13,7 @@ private:
     QueueElement* rear;
 public:
     QueueList();
+    ~QueueList();
     int top();
     void enqueue(int num);
     int dequeue();

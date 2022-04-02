@@ -27,3 +27,10 @@ void QueueList::enqueue(int num) {
         rear=to_insert;
     }
 }
+QueueList::~QueueList(){
+    while(!isEmpty()){
+        QueueElement* to_free = head;
+        head=head->next;
+        delete to_free;
+    }
+}
