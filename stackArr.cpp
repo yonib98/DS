@@ -17,7 +17,7 @@ void StackArr::push(int num) {
 }
 int StackArr::pop(){
     if(isEmpty()){
-        throw new std::exception();
+        throw EmptyStack();
     }
     return data[--top];
 }

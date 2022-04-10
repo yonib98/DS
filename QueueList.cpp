@@ -1,4 +1,6 @@
 #include "QueueList.h"
+#include "exception"
+class EmptyQueue : public std::exception {};
 QueueList::QueueList(): head(nullptr),rear(nullptr){}
 
 bool QueueList::isEmpty() {
@@ -6,7 +8,7 @@ bool QueueList::isEmpty() {
 }
 int QueueList::top(){
     if(isEmpty()){
-        throw new std::exception();
+        throw EmptyQueue();
     }
         return head->val;
 }

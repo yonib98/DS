@@ -14,9 +14,9 @@ private:
 public:
     QueueList();
     ~QueueList();
-    int top();
-    void enqueue(int num);
-    int dequeue();
+    int top() override;
+     void enqueue(int num) override;
+    int dequeue() override ;
     bool isEmpty();
 };
 typedef QueueList Queue;

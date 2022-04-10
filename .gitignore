@@ -2,3 +2,7 @@ CMakeLists.txt
 cmake-build-debug
 main.cpp
 myout.txt
+.idea/DS.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
